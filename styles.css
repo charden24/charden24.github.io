@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.frame {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 200vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: coral;
+    color: lightgoldenrodyellow;
+    z-index: 3;
+    transition: .5s;
+}
+
+    .frame.active {
+        width: 80%;
+        padding: 100px;
+        transition: .5s;
+    }
+
+    .frame header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 50px 100px;
+        z-index: 69;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.logo {
+    position: relative;
+    background-image: url("saltycslogo.png");
+    height: 150px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+}
+
+.name {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+/*menu button*/
+.menu {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-image: url("menuicon.png");
+    background-repeat: no-repeat;
+    background-size: 115px;
+    background-position: center;
+    cursor: crosshair;
+}
+
+    .menu.active {
+        background-image: url("menuiconclose.png");
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position: center;
+    }
+/*end menu button*/
+
+/*background video*/
+.frame video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .75;
+}
+
+.info {
+    position: relative;
+    z-index: 4;
+}
+
+    .info h2 {
+        font-size: 35px;
+    }
+
+    .info h3 {
+        font-size: 25px;
+    }
+
+    .info p {
+        font-size: 20px;
+        max-width: 810px;
+    }
+
+    .info a {
+        display: inline-block;
+        font-size: 25px;
+        background-color: rgba(255, 128, 80, .5);
+        color: #fafa8d;
+        padding: 5px 15px;
+        text-decoration: none;
+        margin-top: 15px;
+        margin-right: 5px;
+        margin-left: 5px;
+        transition: .3s;
+    }
+
+        .info a:hover {
+            display: inline-block;
+            font-size: 30px;
+            background-color: rgba(255, 128, 80, .5);
+            color: #fafa8d;
+            padding: 5px 15px;
+            text-decoration: none;
+            margin-top: 15px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+/*about us page*/
+.abs {
+    z-index: 4;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .abs h1 {
+        font-size: 40px;
+    }
+
+.aboutus {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.aboutboat {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.aboutus p {
+    max-width: 95%;
+    font-size: 25px;
+}
+
+.aboutboat p {
+    max-width: 95%;
+    font-size: 25px;
+}
+
+.abs img {
+    align-items: center;
+    height: 300px;
+    width: 90%;
+}
+
+/*contact us page*/
+.contact {
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+    .contact h1 {
+        font-size: 40px;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+.abs2 {
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+    .abs2 h3 {
+        font-size: 35px;
+        flex: 1 1 20%;
+    }
+
+    .abs2 ul {
+        position: relative;
+        list-style: none;
+        flex: 1 1 40%;
+    }
+
+        .abs2 ul li a {
+            text-decoration: none;
+            color: lightgoldenrodyellow;
+            font-size: 25px;
+        }
+
+            .abs2 ul li a:hover {
+                text-decoration: none;
+                color: coral;
+                font-size: 25px;
+            }   
+.form p {
+    font-size: 35px;
+}
+
+.form input {
+    width: 100%;
+}
+
+.form label {
+    font-size: 30px;
+}
+
+.form textarea {
+    width: 100%;
+    height: 250px;
+}
+
+/*dolphin tours start*/
+.dolphin caption {
+    font-size: 40px;
+}
+
+.dolphin {
+    z-index: 4;
+}
+
+
+
+    .dolphin th {
+        height: 300px;
+        width: 300px;
+        img{
+             width: 300px;
+             height: 300px;
+           }
+
+}
+
+.dolphin td {
+    max-width: 700px;
+    font-size: 30px;
+}
+
+.fh {
+    position: relative;
+    z-index: 5;
+}
+
+    .fh a {
+        display: inline-block;
+        font-size: 50px;
+        background-color: rgba(255, 128, 80, .5);
+        color: #fafa8d;
+        padding: 5px 15px;
+        text-decoration: none;
+        margin-top: 15px;
+        margin-right: 5px;
+        margin-left: 5px;
+        transition: .3s;
+        width: 70%;
+    }
+
+        .fh a:hover {
+            display: inline-block;
+            font-size: 60px;
+            background-color: rgba(255, 128, 80, .5);
+            color: #fafa8d;
+            padding: 50px 15px;
+            text-decoration: none;
+            margin-top: 15px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+.undwater {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+    .undwater p {
+        font-size: 25px;
+    }
+
+    .undwater h1 {
+        font-size: 40px;
+        align-self: center;
+    }
+
+    .undwater section {
+        font-size: 25px;
+    }
+/*beinging of footer*/
+.links {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255,125,85,.2);
+}
+
+.fname {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.links h1 {
+    flex: 0 0 33%;
+}
+
+.links li {
+    list-style: none;
+    font-size: 20px;
+    flex: 0 0 33%;
+}
+
+.links a {
+    text-decoration: none;
+    color: coral;
+    transition: .4s;
+}
+
+.links ul li a:hover {
+    color: #fafa8d;
+}
+/*end of footer*/
+
+/*side menu start*/
+.slider {
+    position: absolute;
+    background-color: coral;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .slider ul {
+        position: relative;
+        list-style: none;
+    }
+
+        .slider ul li a {
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+        }
+
+            .slider ul li a:hover {
+                color: #fafa8d;
+            }
+/*side menu end*/
+
+
+@media(max-width:850px) {
+    .frame {
+        min-height: 250vh;
+    }
+
+        .frame,
+        .frame header {
+            padding: 30px;
+        }
+
+            .frame links {
+                padding: 10px;
+            }
+}
